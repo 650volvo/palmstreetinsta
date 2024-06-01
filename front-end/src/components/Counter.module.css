@@ -47,13 +47,9 @@
 
 .section {
   padding-top: 10px;
-  /* 10 pixels of padding on the top */
   padding-right: 0px;
-  /* 20 pixels of padding on the right */
   padding-bottom: 10px;
-  /* 10 pixels of padding on the bottom */
   padding-left: 0;
-  /* 20 pixels of padding on the left */
   position: relative;
 }
 
@@ -147,8 +143,8 @@
   flex: 4;
 
   display: flex;
-  flex-direction: column; /* Stack the child elements vertically */
-  justify-content: center; /* Align items to the start (top) */
+  flex-direction: column; 
+  justify-content: center; 
   align-items: flex-start; 
 }
 
@@ -164,12 +160,12 @@
 }
 
 .rowtag{
-  text-align: left; /* Aligns text content to the left */
-  display: flex; /* Enables flexbox layout */
-  justify-content: flex-start; /* Aligns content to the left */
-  width: 100%; /* Makes the div take the full width of its container */
-  padding: 0; /* Removes any padding */
-  margin-left: 10px; /* Removes any margin */
+  text-align: left; 
+  display: flex; 
+  justify-content: flex-start; 
+  width: 100%;
+  padding: 0; 
+  margin-left: 10px; 
 }
 
 .rowtag p{
@@ -179,8 +175,8 @@
 
 .imagegallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three images per row */
-  gap: 10px; /* Adjust gap as needed */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
 }
 
 .imageitem {
