@@ -1,0 +1,199 @@
+.header {
+  top: 1px;
+  height: 60px;
+  width: auto;
+  border-bottom: 2px solid lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.counter {
+  margin: auto;
+  top: 1px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  /* the big div*/
+  padding-bottom: 80px; 
+}
+
+
+
+.counter h1 {
+  text-transform: uppercase;
+  color: #575757;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.profile {
+  top: 1px;
+  min-height: 100vh;
+  width: auto;
+  border-bottom: 2px solid lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.counter button {
+  margin: 2px;
+}
+
+.counter header {
+  border: 10px white;
+  height: 100px;
+  width: 100px;
+}
+
+.section {
+  padding-top: 10px;
+  /* 10 pixels of padding on the top */
+  padding-right: 0px;
+  /* 20 pixels of padding on the right */
+  padding-bottom: 10px;
+  /* 10 pixels of padding on the bottom */
+  padding-left: 0;
+  /* 20 pixels of padding on the left */
+  position: relative;
+}
+
+.section .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: stretch;
+  height: 60px;
+}
+.hleft {
+  display: flex;
+  align-items: left;
+  width:100%;
+  height: 100%;
+}
+
+.hleft img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px;
+}
+
+
+.section img {
+
+  top: 10;
+  left: 0;
+  padding-top: 5px;
+  width: 100px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.signup {
+  background-color: white;
+  color: #0195f7;
+  border: none;
+}
+
+.signup:hover,
+.signup:active,
+.signup:focus {
+  background-color: white;
+  color: black;
+}
+
+
+.procontent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.midcontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid white;
+}
+
+
+.rowfirst {
+  display: flex;
+  height: 12rem;
+  border: 1px solid white;
+  margin-bottom:2rem;
+}
+
+.rowfirst .left {
+  flex: 1;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 2rem;
+  margin: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+.rowfirst .left img{
+  
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 2rem;
+  margin-left:1rem;
+}
+
+.rowfirst .right {
+  flex: 4;
+
+  display: flex;
+  flex-direction: column; /* Stack the child elements vertically */
+  justify-content: center; /* Align items to the start (top) */
+  align-items: flex-start; 
+}
+
+.status {
+  height: 2.2rem;
+  width: 100%;
+  display: flex;
+}
+
+.status p{
+  font-size:1rem; 
+  font-weight: bold;
+}
+
+.rowtag{
+  text-align: left; /* Aligns text content to the left */
+  display: flex; /* Enables flexbox layout */
+  justify-content: flex-start; /* Aligns content to the left */
+  width: 100%; /* Makes the div take the full width of its container */
+  padding: 0; /* Removes any padding */
+  margin-left: 10px; /* Removes any margin */
+}
+
+.rowtag p{
+  color: rgb(86, 86, 86);
+  font-weight: 600;
+}
+
+.imagegallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three images per row */
+  gap: 10px; /* Adjust gap as needed */
+}
+
+.imageitem {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
