@@ -6,13 +6,16 @@
         "config": { "distDir": "build" }
       },
       {
-        "src": "back-end/api/server.js",
+        "src": "back-end/api/*.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       { "src": "/api/(.*)", "dest": "/api/server.js" },
       { "src": "/(.*)", "dest": "/frontend/$1" }
-    ]
+    ],
+    "env": {
+        "CI": "false"
+      }
   }
   
